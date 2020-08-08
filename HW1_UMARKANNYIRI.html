@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <mata name="viewport" content="width=device-width", initial-scale="1.0"> 
+
+<title>
+FORM.html
+</title> 
+<style>
+    .header {
+    text-align: center;
+    text-decoration: underline;
+    }
+    
+    #form-container {
+        background-color: #dddddd;
+        margin: 0px 25% 0px 25%;
+        border-radius: 5px;
+        padding: 10px 15px;
+    }
+    
+    .form-input{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 3px 0 7px 0;
+        padding: 4px;
+        border-radius: 5px;
+        border: 2px solid cornsilk;
+    }
+    label {
+        font-family: calibri;
+        font-size: small;
+        color: #333333;
+    }
+    .btn-submit {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        border-width: 0px;
+        border-radius: 3px;
+    }
+    .btn-submit:hover {
+    background-color: purple;
+    text-decoration: underline;
+    transition: all is;
+    }
+</style>
+
+    </head>
+    <body>
+        <section>
+            <h1 class="header">Contact form</h1>
+        </section>
+        <section>
+            <article id="form-container">
+                <form action="">
+                    <label for="first">First Name</label>
+                    <input class="form-input" type="text" id="first" placeholder="your name..." />
+
+                    <label for="last">Last Name</label>
+                    <input class="form-input" type="text" id="last" placeholder="your last name..." />
+
+                    <label for="country">country</label>
+                    <select class="form-input" name="" id="countries">
+                        <option value="aus">Australia</option>
+                        <option value="gh">Ghana</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="ky">Kenya</option>
+                        <option value="ca">Canada</option>
+                    </select>
+                    <label for="subject">subject</label>
+                    <textarea class="form-input" name="" id="subject" cols="30" rows="10" placeholder="write something..."></textarea>
+
+                    <input type="submit" class="btn-submit" value="submit" />
+
+                </form>
+                
+            </article>
+        </section>
+    </body>
+</html>
